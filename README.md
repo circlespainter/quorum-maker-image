@@ -8,7 +8,7 @@ Quorum Maker uses Docker to make the setup easy. Most of the dependancies are ba
    1. `mkdir qmtemp; cd qmtemp ` 
    1. `git clone https://github.com/synechron-finlabs/quorum-maker-nodemanager.git`
    1. `git clone https://github.com/synechron-finlabs/quorum-maker-ui.git`
-   1. `git clone https://github.com/synechron-finlabs/quorum-maker-image.git` 
+   1. `git clone https://github.com/circlespainter/quorum-maker-image.git` 
    1. Quorum Maker project is not required to build docker image as it is required only at runtime. 
 1. Run `./build_image.sh` inside `quorum-maker-image` directory. Following are the steps executed automatically by this script. 
    1. Automatically build quorum-maker-nodemanager using Golang and copy the executable to image.
