@@ -7,7 +7,7 @@ echo $CYAN"Building Tessera, "$tessera_version"..."$COLOR_END
 
 rm -rf tessera
 
-# docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git clone https://github.com/jpmorganchase/tessera.git
+docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git clone https://github.com/jpmorganchase/tessera.git
 docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git -w /git/tessera alpine/git checkout master # tessera-$tessera_version
 
 chownDir 'tessera'
